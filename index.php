@@ -48,6 +48,7 @@ $conn->close();
         <div class="bx--header__name">Auth Page</div>
     </header>
     <main class="bx--content">
+    <h1>Auth</h1>
         <div class="bx--grid">
             <div class="bx--row">
                 <div class="bx--col-lg-6">
