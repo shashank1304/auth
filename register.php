@@ -14,17 +14,23 @@
                         <label for="username" class="bx--label">Username:</label>
                         <input type="text" id="username" name="username" class="bx--text-input" required>
                     </div>
-                    <div class="bx--form-item"></div>
+                    <div class="bx--form-item">
                         <label for="password" class="bx--label">Password:</label>
                         <input type="password" id="password" name="password" class="bx--text-input" required>
                     </div>
+                    <div class="bx--form-item">
+                        <label for="email" class="bx--label">Email:</label>
+                        <input type="email" id="email" name="email" class="bx--text-input" required>
+                    </div>
+
+
                     <button type="submit" class="bx--btn bx--btn--primary">Register</button>
                 </form>
             </div>
         </div>
     </div>
     <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
-    <script></script>
+    <script>
         carbonComponents.watch();
     </script>
 </body>

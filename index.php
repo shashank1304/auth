@@ -5,8 +5,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['register'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $email = $_POST['email'];
 
-        $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+        $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
         if ($conn->query($sql) === TRUE) {
             echo "Registration successful";
         } else {
@@ -76,6 +77,11 @@ $conn->close();
                             <label for="register-password" class="bx--label">Password</label>
                             <input type="password" id="register-password" name="password" class="bx--text-input" required>
                         </div>
+                        <div class="bx--form-item">
+                            <label for="register-email" class="bx--label">Email</label>
+                            <input type="email" id="register-email" name="email" class="bx--text-input" required>
+                        </div>
+
                         <button type="submit" name="register" class="bx--btn bx--btn--secondary">Register</button>
                     </form>
                 </div>
